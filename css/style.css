@@ -9,7 +9,7 @@
 .container-home {
     position: relative;
     min-height: 100vh;
-    background: url('/img/pexels-olly-3820065.jpg') center / cover no-repeat;
+    background: url('../img/pexels-olly-3820065.jpg') center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
