@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasil & Rekomendasi</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="container-result">
 
-        <!-- LEFT : RESULT -->
-        <div class="result-left">
-            <div class="assesment-result">
-                <h2 id="user-greeting">Hasil Asesmen</h2>
+    <main class="result-page">
+        <section class="result-wrapper">
+
+            <header class="result-header">
+                <h2 id="user-greeting">Hasil Asesmen Anda</h2>
+                <p class="subtitle">
+                    Berdasarkan jawaban yang Anda berikan
+                </p>
+            </header>
+
+            <div class="score-section">
+                <div class="score-circle">
+                    <span id="score-display">0</span>
+                </div>
+                <span id="category-display" class="badge">Loading...</span>
             </div>
-
-            <div class="score-circle">
-                <span id="score-display">0</span>
-            </div>
-
-            <span id="category-display" class="badge">Loading...</span>
 
             <div class="result-card">
-                <label>Rekomendasi Kami:</label>
-                <p id="recommendation-text" style="font-size: 0.95rem; margin-top: 5px;">
+                <label>Rekomendasi Kami</label>
+                <p id="recommendation-text">
                     Menganalisa jawaban...
                 </p>
             </div>
 
-            <p class="download-info">
-                Unduh panduan lengkap berdasarkan hasil Anda:
-            </p>
+            <div class="download-section">
+                <p class="download-info">
+                    Unduh panduan lengkap sesuai peran Anda:
+                </p>
 
-            <button id="btn-download" class="btn">Download Panduan PDF</button>
+                <div class="container-download">
+                    <button id="btn-ibu" class="btn">Panduan untuk Bunda</button>
+                    <button id="btn-ayah" class="btn btn-outline">Panduan untuk Ayah</button>
+                </div>
+            </div>
+
             <button id="btn-restart" class="btn btn-secondary">
                 Ulangi Tes
             </button>
-        </div>
 
-        <!-- RIGHT : IMAGE -->
-        <div class="result-right">
-            <img src="./img/pexels-olly-755028.jpg" alt="Ilustrasi Hasil">
-        </div>
-
-    </div>
+        </section>
+    </main>
 
     <script src="js/result.js"></script>
 </body>

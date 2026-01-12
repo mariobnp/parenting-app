@@ -16,17 +16,20 @@
 </head>
 
 <body>
-    <div class="container-home">
+    <section class="container-home">
         <div class="title">
             <div class="logo">
                 <img src="./img/family.png" alt="">
                 <p>Ayah Bunda Academy</p>
             </div>
-            <h1>Level Up Your Parenting</h1>
-            <p>Cegah Baby Blues dengan Kekompakan sejak dini. Cek seberapa siap kalian menjadi tim yang solid!</p>
+            <div class="home-text">
+                <h1>Level Up Your Parenting</h1>
+                <p>Cegah Baby Blues dengan Kekompakan sejak dini. Cek seberapa siap kalian menjadi tim yang solid!</p>
+            </div>
+            <a href="#section-2">Jelajahi</a>
         </div>
 
-        <div class="container-form">
+        <!-- <div class="container-form">
             <form action="" id="hero-form">
                 <div class="input-group">
                     <label>Nama Ayah</label>
@@ -38,7 +41,193 @@
                 </div>
                 <button id="btn-start" class="btn">Mulai Sekarang</button>
             </form>
+        </div> -->
+    </section>
+
+    <!-- Section 2  -->
+    <section class="about-section" id="section-2">
+        <div class="image-wrapper">
+            <img src="./img/pexels-panditwiguna-1128318.jpg" alt="">
         </div>
+        <div class="content-wrapper">
+            <div class="text-wrapper">
+                <div class="text-content">
+                    <h2>Apa itu Ayah Bunda Academy?</h2>
+                    <p>Ayah Bunda Academy adalah aplikasi game edukatif kesehatan untuk pasangan muda sebagai media
+                        interaktif pencegahan <span>baby blues</span> dan <span>depresi</span> pasca persalian</p>
+                </div>
+                <div class="btn-wrapper">
+                    <a href="#section-4 ">Coba Sekarang</a>
+                </div>
+            </div>
+            <div class="benefit-wrapper">
+                <h2>Manfaat untuk orang tua ?</h2>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./img/self-confidence.png" alt="" width="48px" height="48px">
+                        <p>Membantu orang tua lebih percaya diri dalam mengasuh anak</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/lightbulb.png" alt="" width="48px" height="48px">
+                        <p>Memberi tips praktis yang bisa langsung diterapkan di rumah</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/family (1).png" alt="" width="48px" height="48px">
+                        <p>Membantu membangun hubungan yang hangat antara orang tua dan anak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mulai Sekarang -->
+    <section class="start-section" id="section-4">
+        <div class="start-wrapper">
+
+            <!-- KIRI -->
+            <div class="start-content">
+                <h2>Mulai Perjalanan Parenting Anda</h2>
+                <p>
+                    Isi nama Ayah dan Bunda untuk memulai pengalaman belajar
+                    parenting yang hangat, praktis, dan penuh makna.
+                </p>
+
+                <form class="start-form">
+                    <input type="text" id="dadName" placeholder="Nama Ayah" required>
+                    <input type="text" id="momName" placeholder="Nama Bunda" required>
+                    <button id="btn-start" type="submit">Mulai Sekarang</button>
+                </form>
+            </div>
+
+            <!-- KANAN -->
+            <div class="start-image">
+                <img src="./img/pexels-emma-bauso-1183828-2253879.jpg" alt="Ilustrasi Parenting">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section" id="section-faq">
+        <div class="faq-container">
+            <h2 class="faq-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+
+            <div class="faq-item">
+                <button class="faq-question-btn">
+                    <span>Apakah hasil tes ini bisa dijadikan diagnosa medis?</span>
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Tidak. Website ini adalah alat asesmen awal (skrining) untuk edukasi dan refleksi diri.
+                        Jika Anda atau pasangan mengalami gejala depresi berat atau kecemasan berlebih,
+                        mohon segera hubungi psikolog atau psikiater profesional.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question-btn">
+                    <span>Apakah data nama dan jawaban saya disimpan di server?</span>
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Tidak sama sekali. Kami sangat menjaga privasi Anda. Semua data (nama, usia, jawaban) hanya
+                        tersimpan sementara di browser HP/Laptop Anda saat ini.
+                        Begitu Anda menutup tab atau browser, data akan otomatis terhapus.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question-btn">
+                    <span>Mengapa kuis ini dibagi menjadi 4 Level?</span>
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Karena kesiapan menjadi orang tua itu holistik (menyeluruh). Kami membaginya menjadi: Kesiapan
+                        Emosi,
+                        Komunikasi Pasangan, Dukungan Lingkungan (Support System),
+                        dan Pengetahuan Baby Blues agar Anda siap dari segala sisi.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question-btn">
+                    <span>Jika skor saya rendah, apakah saya belum siap menjadi orang tua?</span>
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Skor rendah bukan berarti Anda gagal, tapi penanda bahwa ada area yang perlu didiskusikan lebih
+                        dalam
+                        bersama pasangan. Gunakan panduan yang muncul di setiap level untuk memperbaiki persiapan
+                        kalian.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question-btn">
+                    <span>Apakah tes ini harus diisi oleh Ayah atau Bunda?</span>
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Idealnya diisi berdua secara bergantian atau bersama-sama sambil berdiskusi. Kekompakan adalah
+                        kunci
+                        utama mencegah Baby Blues.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question-btn');
+
+                btn.addEventListener('click', () => {
+                    // Opsional: Tutup item lain saat satu dibuka (Accordion Style)
+                    // Jika ingin bisa buka banyak sekaligus, hapus bagian ini:
+                    faqItems.forEach(i => {
+                        if (i !== item) i.classList.remove('active');
+                    });
+
+                    // Toggle item yang diklik
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+
     <script src="js/data.js"></script>
 </body>
 

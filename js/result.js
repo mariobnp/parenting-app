@@ -67,12 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("recommendation-text").innerHTML = recommendation;
 
   // 5. Button Handler ke Google Drive
-  document.getElementById("btn-download").addEventListener("click", () => {
+  document.getElementById("btn-ibu").addEventListener("click", () => {
     window.open(
-      "https://drive.google.com/file/d/1qtpXPG3niZ95M0LaaPcZyQLcPrtOmwHx/view?usp=sharing",
+      "https://drive.google.com/file/d/1zNGub6Z1YwCfZ71dWegBcRKO8Hi-xQsv/view?usp=sharing",
       "_blank"
     );
   });
+
+    document.getElementById("btn-ayah").addEventListener("click", () => {
+      window.open(
+        "https://drive.google.com/file/d/1qtpXPG3niZ95M0LaaPcZyQLcPrtOmwHx/view?usp=sharing",
+        "_blank"
+      );
+    });
 
   // Tombol Ulang
   document.getElementById("btn-restart").addEventListener("click", () => {

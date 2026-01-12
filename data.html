@@ -5,53 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Kontekstual</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <div class="container-data">
-        <div class="container-data-left">
-            <h2>Sedikit Tentang Kalian</h2>
-            <p>Data ini membantu kami memberikan saran yang lebih personal.</p>
-    
-            <form>
-                <div class="input-group-data">
-                    <label>Usia Bunda</label>
-                    <input type="number" id="momAge" placeholder="Contoh: 28">
-                </div>
-    
-                <div class="input-group-data">
-                    <label>Ini adalah kehamilan anak ke-</label>
-                    <select id="pregnancyStatus">
-                        <option value="" disabled selected>Pilih...</option>
-                        <option value="1">Pertama (New Parents)</option>
-                        <option value="2">Kedua</option>
-                        <option value="3">Ketiga atau lebih</option>
-                    </select>
-                </div>
-    
-                <div class="input-group-data">
-                    <label>Apakah kehamilan ini direncanakan?</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="planned" value="yes"> Ya, Rencana</label>
-                        <label><input type="radio" name="planned" value="no"> Tidak / Surprise</label>
-                    </div>
-                </div>
-    
-                <button id="btn-next-data" class="btn">Lanjut ke Quiz</button>
-            </form>
-        </div>
 
-        <div class="container-data-right">
-            <img src="./img/pexels-olly-755028.jpg" alt="">
+    <section class="data-alt-section">
+        <div class="data-alt-container">
+    
+            <!-- HEADER -->
+            <div class="data-alt-header">
+                <span class="step-badge">Langkah 1 dari 2</span>
+                <h2>Sedikit Tentang Kalian</h2>
+                <p>Data ini membantu kami memberikan saran yang lebih personal.</p>
+            </div>
+    
+            <!-- CONTENT -->
+            <div class="data-alt-content">
+    
+                <!-- FORM -->
+                <form class="data-alt-form">
+    
+                    <div class="input-group-data">
+                        <label for="momAge">Usia Bunda</label>
+                        <input type="number" id="momAge" placeholder="Contoh: 28">
+                    </div>
+    
+                    <div class="input-group-data">
+                        <label for="pregnancyStatus">Status Kehamilan</label>
+                        <select id="pregnancyStatus">
+                            <option value="" disabled selected>Pilih...</option>
+                            <option value="1">Sedang hamil.</option>
+                            <option value="2">Baru saja melahirkan.</option>
+                            <option value="3">Sedang merencanakan.</option>
+                        </select>
+                        <label for="pregnancyStatus">Ini anak ke-berapa?</label>
+                        <select id="pregnancyStatus">
+                            <option value="" disabled selected>Pilih...</option>
+                            <option value="1">Anak ke-1.</option>
+                            <option value="2">Anak ke-2.</option>
+                            <option value="3">Anak ke-3.</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-group-data">
+                        <label>Apakah kehamilan ini direncanakan?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="planned" value="yes"> Ya, Rencana
+                            </label>
+                            <label>
+                                <input type="radio" name="planned" value="no"> Tidak
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- ID BUTTON TETAP -->
+                    <button id="btn-next-data" class="btn-primary">
+                        Lanjut ke Quiz
+                    </button>
+    
+                </form>
+    
+                <!-- IMAGE -->
+                <div class="data-alt-image">
+                    <img src="./img/pexels-olly-755028.jpg" alt="Keluarga Bahagia">
+                </div>
+    
+            </div>
         </div>
-    </div>
+    </section>
+
+
     <script src="js/data.js"></script>
 </body>
 
